@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Cadastro</title>
+        <link rel="stylesheet" href="cas.css">
+        <script>
+            function cadastro(){
+    var nome= document.getElementById ("Nome").value;
+    var sobrenome= document.getElementById ("Sobrenome").value;
+    var email= document.getElementById ("Email").value;
+    var senha= document.getElementById ("password").value;
+    if (nome === ""){
+        alert ("Ops, tente novamente");
+    }
+    if (sobrenome === ""){
+        alert ("Ops, tente novamente");
+    }
+    if (email === ""){
+        alert ("Ops, tente novamente");
+    }
+    if (senha === "" || senha.length <8){
+        alert ("Ops, tente uma senha maior!");
+    }
+
+    else{
+        alert ("Parábens, tu conseguiu!")
+    }
+
+} 
+
+        </script>
+    </head>
+    <body>
+        <div class="first-cadastro">
+            <div class="left-cadastro">
+                <img src="ing/New entries-amico.png">
+              
+             </div>
+             <div class="right-cadastro">
+                <div class="card-cadastro"> 
+                    <h1>Cadastro</h1>
+                    <div class="textField">
+                        <label for="Nome Completo">Nome:</label>
+                        <input id="Nome" type="text" placeholder="Nome">
+                    </div>
+                    <div class="textField">
+                     <label for="sobrenome">Sobrenome:</label>
+                     <input id="Sobrenome" type="sobrenome"  placeholder="Sobrenome">
+                  </div>
+                  <div class="textField">
+                    <label for="email">Email:</label>
+                    <input id="Email" type="text"  placeholder="Email">
+                </div>
+                <div class="textField">
+                    <label for="senha">Senha:</label>
+                    <input id="password" type="password"  placeholder="Senha">
+                </div>
+
+                <button onclick="cadastro()" class="btn-cadastro">Cadastre-se</button>
+    </div>
+    </div>
+    
+     </div>
+    </div>
+          
+    </form>
+    </body>
+</html>
